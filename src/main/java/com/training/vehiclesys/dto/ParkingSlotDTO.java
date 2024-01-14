@@ -3,13 +3,13 @@ package com.training.vehiclesys.dto;
 public class ParkingSlotDTO {
     private int slot_id;
 
-    private String slot_name;
+    private String slotName;
 
     private boolean availability;
 
     public ParkingSlotDTO(int slot_id, String slot_name, boolean availability) {
         this.slot_id = slot_id;
-        this.slot_name = slot_name;
+        this.slotName = slot_name;
         this.availability = availability;
     }
 
@@ -25,11 +25,11 @@ public class ParkingSlotDTO {
     }
 
     public String getSlot_name() {
-        return slot_name;
+        return slotName;
     }
 
     public void setSlot_name(String slot_name) {
-        this.slot_name = slot_name;
+        this.slotName = slot_name;
     }
 
     public boolean isAvailability() {
@@ -44,7 +44,7 @@ public class ParkingSlotDTO {
     public String toString() {
         return "ParkingSlotDTO{" +
                 "slot_id=" + slot_id +
-                ", slot_name='" + slot_name + '\'' +
+                ", slot_name='" + slotName + '\'' +
                 ", availability=" + availability +
                 '}';
     }

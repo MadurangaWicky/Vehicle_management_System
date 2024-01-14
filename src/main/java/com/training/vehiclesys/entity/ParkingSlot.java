@@ -13,14 +13,14 @@ public class ParkingSlot {
     private int slot_id;
 
     @Column(name = "slot_name", length = 255, nullable = false)
-    private String slot_name;
+    private String slotName;
 
     @Column(name = "availability", nullable = false, columnDefinition = "TINYINT default 1")
     private boolean availability;
 
     public ParkingSlot(int slot_id, String slot_name, boolean availability) {
         this.slot_id = slot_id;
-        this.slot_name = slot_name;
+        this.slotName = slot_name;
         this.availability = availability;
     }
 
@@ -36,11 +36,11 @@ public class ParkingSlot {
     }
 
     public String getSlot_name() {
-        return slot_name;
+        return slotName;
     }
 
     public void setSlot_name(String slot_name) {
-        this.slot_name = slot_name;
+        this.slotName = slot_name;
     }
 
     public boolean isAvailability() {
@@ -55,7 +55,7 @@ public class ParkingSlot {
     public String toString() {
         return "ParkingSlot{" +
                 "slot_id=" + slot_id +
-                ", slot_name='" + slot_name + '\'' +
+                ", slot_name='" + slotName + '\'' +
                 ", availability=" + availability +
                 '}';
     }
